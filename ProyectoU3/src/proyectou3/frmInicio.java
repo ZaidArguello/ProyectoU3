@@ -43,14 +43,39 @@ public class frmInicio extends javax.swing.JPanel {
         });
 
         btnSalir.setText("SALIR");
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
+            }
+        });
 
         btnAltas.setText("ALTAS");
+        btnAltas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAltasActionPerformed(evt);
+            }
+        });
 
         btnBajas.setText("BAJAS");
+        btnBajas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBajasActionPerformed(evt);
+            }
+        });
 
         btnConsultas.setText("CONSULTAS");
+        btnConsultas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConsultasActionPerformed(evt);
+            }
+        });
 
         btnModificaciones.setText("MODIFICACIONES");
+        btnModificaciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificacionesActionPerformed(evt);
+            }
+        });
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/imagen00.jpg"))); // NOI18N
 
@@ -98,8 +123,33 @@ public class frmInicio extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAutorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAutorActionPerformed
-        // TODO add your handling code here:
+    frmAutor frm = new frmAutor();
+    frm.setVisible(true);    
     }//GEN-LAST:event_btnAutorActionPerformed
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnAltasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAltasActionPerformed
+        frmAltas frm = new frmAltas();
+        frm.setVisible(true); 
+    }//GEN-LAST:event_btnAltasActionPerformed
+
+    private void btnBajasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBajasActionPerformed
+        frmBajas frm = new frmBajas();
+        frm.setVisible(true); 
+    }//GEN-LAST:event_btnBajasActionPerformed
+
+    private void btnConsultasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultasActionPerformed
+        frmConsultas frm = new frmConsultas();
+        frm.setVisible(true); 
+    }//GEN-LAST:event_btnConsultasActionPerformed
+
+    private void btnModificacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificacionesActionPerformed
+        frmModificaciones frm = new frmModificaciones();
+        frm.setVisible(true); 
+    }//GEN-LAST:event_btnModificacionesActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -111,4 +161,3 @@ public class frmInicio extends javax.swing.JPanel {
     private javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
-}
